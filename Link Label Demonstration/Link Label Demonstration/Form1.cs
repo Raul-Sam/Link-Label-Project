@@ -22,5 +22,10 @@ namespace Link_Label_Demonstration
         {
             System.Diagnostics.Process.Start("https://www.boredbutton.com");
         }
+
+        private void lnkNotepad_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("notepad");
+        }
     }
 }
