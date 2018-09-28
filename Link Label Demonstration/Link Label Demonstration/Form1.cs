@@ -27,5 +27,22 @@ namespace Link_Label_Demonstration
         {
             System.Diagnostics.Process.Start("notepad");
         }
+
+        private void lnkAddTwoNumbers_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            addNumbers();
+        }
+
+        int num1;
+        int num2;
+        private void addNumbers()
+        {
+            if (int.TryParse(tbxNum1.Text, out num1) && 
+                (int.TryParse(tbxNum2.Text, out num2)))
+            {
+                int result = num1 + num2;
+                lblResults.Text = $"{result}";
+            }
+        }
     }
 }
