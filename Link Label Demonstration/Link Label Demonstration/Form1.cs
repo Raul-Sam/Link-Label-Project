@@ -57,6 +57,7 @@ namespace Link_Label_Demonstration
         {
             // Send the URL to the operating system.
             Process.Start(e.Link.LinkData as string);
+            linkLabel1.Enabled = false;
         }
 
 
