@@ -89,6 +89,7 @@
             this.lnkNotepad.Text = "Get to work; Launch Notepad";
             this.lnkNotepad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lnkNotepad.UseCompatibleTextRendering = true;
+            this.lnkNotepad.UseMnemonic = false;
             this.lnkNotepad.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkNotepad_LinkClicked);
             // 
             // lblGoof
@@ -121,7 +122,7 @@
             this.lnkAddTwoNumbers.Size = new System.Drawing.Size(144, 13);
             this.lnkAddTwoNumbers.TabIndex = 2;
             this.lnkAddTwoNumbers.TabStop = true;
-            this.lnkAddTwoNumbers.Text = "Click to add the two numbers";
+            this.lnkAddTwoNumbers.Text = "&Click to add the two numbers";
             this.lnkAddTwoNumbers.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkAddTwoNumbers_LinkClicked);
             // 
             // lblResults
@@ -160,6 +161,7 @@
             // 
             // linkLabel2
             // 
+            this.linkLabel2.ActiveLinkColor = System.Drawing.Color.LawnGreen;
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.Location = new System.Drawing.Point(22, 356);
             this.linkLabel2.Name = "linkLabel2";
