@@ -37,6 +37,7 @@
             this.lblResults = new System.Windows.Forms.Label();
             this.tbxNum1 = new System.Windows.Forms.TextBox();
             this.tbxNum2 = new System.Windows.Forms.TextBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.tblLinkDemo.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -145,11 +146,23 @@
             this.tbxNum2.Size = new System.Drawing.Size(47, 20);
             this.tbxNum2.TabIndex = 5;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(19, 290);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(106, 13);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Click here to visit site";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
             // lnkDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(483, 530);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.tbxNum2);
             this.Controls.Add(this.tbxNum1);
             this.Controls.Add(this.lblResults);
@@ -157,6 +170,7 @@
             this.Controls.Add(this.tblLinkDemo);
             this.Name = "lnkDemo";
             this.Text = "Link Label Demo";
+            this.Load += new System.EventHandler(this.lnkDemo_Load);
             this.tblLinkDemo.ResumeLayout(false);
             this.tblLinkDemo.PerformLayout();
             this.ResumeLayout(false);
@@ -175,6 +189,7 @@
         private System.Windows.Forms.Label lblResults;
         private System.Windows.Forms.TextBox tbxNum1;
         private System.Windows.Forms.TextBox tbxNum2;
+        private System.Windows.Forms.LinkLabel linkLabel1;
     }
 }
 

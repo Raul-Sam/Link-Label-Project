@@ -44,5 +44,19 @@ namespace Link_Label_Demonstration
                 lblResults.Text = $"{result}";
             }
         }
+
+        private void lnkDemo_Load(object sender, EventArgs e)
+        {
+            // Add a link to the LinkLabel.
+            LinkLabel.Link link = new LinkLabel.Link();
+            link.LinkData = "http://www.dotnetperls.com/";
+            linkLabel1.Links.Add(link);
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // Send the URL to the operating system.
+            Process.Start(e.Link.LinkData as string);
+        }
     }
 }
