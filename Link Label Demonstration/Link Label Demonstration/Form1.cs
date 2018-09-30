@@ -58,5 +58,12 @@ namespace Link_Label_Demonstration
             // Send the URL to the operating system.
             Process.Start(e.Link.LinkData as string);
         }
+
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            //change BackColor of LinkLabel
+            linkLabel1.BackColor = Color.CadetBlue;
+        }
     }
 }
